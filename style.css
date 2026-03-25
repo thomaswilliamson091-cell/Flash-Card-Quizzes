@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:  lightblue;
+    display: flex;
+    justify-content: center;
+    padding-top: 135px;
+}
+
+.container {
+    background-color: white;
+    width: 550px;
+    padding: 50px;
+    border: 10px solid black; 
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Using simple color names */
+.maths { background-color: blue; }
+.english { background-color: deeppink; }
+.science { background-color: green; }
+
+.quiz-box {
+    border: 2px solid gray;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#answer-buttons button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Right and Wrong feedback */
+.correct { background-color: limegreen !important; }
+.wrong { background-color: red !important; }
+
+.hidden { display: none; }
+
+.start-btn {
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+}

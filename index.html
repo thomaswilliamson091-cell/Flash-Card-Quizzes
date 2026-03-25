@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Revision Quizzes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="home-screen" class="screen">
+            <h1>Flashcard Quiz Help</h1>
+            <p>Select a subject:</p>
+            <button class="btn maths" onclick="selectSubject('Maths')">Maths</button>
+            <button class="btn english" onclick="selectSubject('English')">English</button>
+            <button class="btn science" onclick="selectSubject('Science')">Science</button>
+        </div>
+
+        <div id="start-screen" class="screen hidden">
+            <h1 id="subject-title">Subject</h1>
+            <button class="start-btn" onclick="startQuiz()">Click to Start</button>
+            <br>
+            <button onclick="goHome()">Change Subject</button>
+        </div>
+
+        <div id="quiz-screen" class="screen hidden">
+            <h3 id="progress">Question 1 of 10</h3>
+            <div class="quiz-box">
+                <p id="question-text">Question text goes here</p>
+                <div id="answer-buttons">
+                    </div>
+            </div>
+            <button id="next-btn" class="hidden" onclick="nextQuestion()">Next Question</button>
+        </div>
+
+        <div id="result-screen" class="screen hidden">
+            <h1>Finished!</h1>
+            <p>Your Score: <span id="score-display">0</span> / 10</p>
+            <button onclick="goHome()">HomePage</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
