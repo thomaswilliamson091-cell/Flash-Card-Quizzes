@@ -17,9 +17,9 @@ Clean, responsive layout built with vanilla HTML, CSS, and JavaScript
 
 File Structure
 
-├── index.html      # Main HTML structure and screen layouts
-├── style.css       # All styling, layout, and answer feedback colours
-└── script.js       # Quiz logic, question data, scoring, and screen control
+index.html      # Main HTML structure and screen layouts
+style.css       # All styling, layout, and answer feedback colours
+script.js       # Quiz logic, question data, scoring, and screen control
 
 
 Technologies Used
