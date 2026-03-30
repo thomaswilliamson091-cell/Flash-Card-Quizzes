@@ -1,3 +1,4 @@
+/* Main page styling */
 body {
     font-family: Arial, sans-serif;
     background-color:  lightblue;
@@ -7,7 +8,7 @@ body {
 }
 
 .container {
-    background-color: white;
+    background-color: #FFFFFF;
     width: 550px;
     padding: 50px;
     border: 10px solid black; 
@@ -37,6 +38,7 @@ body {
     margin-bottom: 10px;
 }
 
+/* Answer buttons */
 #answer-buttons button {
     display: block;
     width: 100%;
@@ -47,8 +49,8 @@ body {
 }
 
 /* Right and Wrong feedback */
-.correct { background-color: limegreen !important; }
-.wrong { background-color: red !important; }
+.correct { background-color: limegreen !important; } /* Correct answer highlight */
+.wrong { background-color: red !important; } /* Incorrect answer highlight */
 
 .hidden { display: none; }
 

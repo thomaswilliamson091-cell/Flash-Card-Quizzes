@@ -1,3 +1,10 @@
+// Flashcard Quiz Program
+// Author: Thomas Williamson
+// Description: This program allows users to select a subject and complete a 10-question multiple choice quiz.
+// The system tracks the score and displays the final result.
+
+// Array storing all quiz questions for each subject
+// sub = subject, q = question, a = answers, c = correct answer index
 const allQuestions = [
 
     { sub: "Maths", q: "What is 12 x 12?", a: ["142", "124", "164", "144"], c: 3 },
@@ -34,9 +41,13 @@ const allQuestions = [
     { sub: "Science", q: "Boiling point of water?", a: ["90°C", "100°C", "110°C", "120°C"], c: 1 }
 ];
 
+// Stores the selected subject
 let selectedSubject = "";
+// Stores filtered questions for chosen subject
 let currentQuestions = [];
+// Tracks current question number
 let questionIndex = 0;
+// Tracks user score
 let score = 0;
 
 function selectSubject(name) {
@@ -54,7 +65,7 @@ function startQuiz() {
     }
 
 
-    currentQuestions.sort(function() { return 0.5 - Math.random() });
+    currentQuestions.sort(function() { return 0.5 - Math.random() }); // Randomises question order
 
     questionIndex = 0;
     score = 0;
@@ -69,7 +80,7 @@ function displayQuestion() {
     document.getElementById("next-btn").classList.add("hidden");
 
     let div = document.getElementById("answer-buttons");
-    div.innerHTML = ""; 
+    div.innerHTML = "";  // Clears previous answers
 
 
     for (let i = 0; i < 4; i++) {
